@@ -1,6 +1,5 @@
 deploy:
   provider: heroku
-  api_key:
-    secure: da97d28a-5a17-43c1-b0d7-c56ddc9a21d5
-  app:vrayndlsh
+  api_key: da97d28a-5a17-43c1-b0d7-c56ddc9a21d5
+  app: vrayndlsh
 
