@@ -3,8 +3,10 @@ sudo: required
 
 services:
   - docker
- 
-before_install:
-  - docker build -t registry.heroku.com/"$HEROKU_APPNAME"/web .
-  - docker login -u "$HEROKU_EMAIL" -p "$HEROKU_APIKEY" registry.heroku.com
-  - docker push registry.heroku.com/"$HEROKU_APPNAME"/web
+  
+deploy:
+  provider: heroku
+  api_key:
+    secure: "da97d28a-5a17-43c1-b0d7-c56ddc9a21d5" 
+  app:vrayndlsh
+
